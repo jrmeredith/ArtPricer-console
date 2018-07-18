@@ -23,7 +23,7 @@ int main() {
 	pieceInfo();
 	
 	// Calculating variables
-	calculation();
+	//calculation();
 	
 	// Final batch of print statements.
 	report(calculation());
