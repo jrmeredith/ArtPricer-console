@@ -13,6 +13,7 @@
 #include "Piece.h"
 using namespace std;
 
+
 int main() {
 	
 	// Startup message
@@ -71,17 +72,17 @@ void pieceInfo() {
 	cin >> markUp;
 };
 
-double calculation() {
-	double wages = hourlyPay * hours;
-	double markUpDec = markUp / 100;
+dbl calculation() {
+	dbl wages = hourlyPay * hours;
+	dbl markUpDec = markUp / 100;
 	studioRentDays = (studioRent / 30);	
-	double expenses = studioRentDays + fuel + materialCost + (metalWeight * metalPricePGram);
-	double income = (markUpDec * wages) + wages;
-	double finalPrice = income + expenses;
+	dbl expenses = studioRentDays + fuel + materialCost + (metalWeight * metalPricePGram);
+	dbl income = (markUpDec * wages) + wages;
+	dbl finalPrice = income + expenses;
 	return finalPrice;
 }
 
-void report(double final) {
+void report(dbl final) {
 	cout << "\n\n";
 	cout << "=============================" << endl;
 	cout << "Hourly wage: $" << hourlyPay << endl;
